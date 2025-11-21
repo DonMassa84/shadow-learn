@@ -1,16 +1,41 @@
-# React + Vite
+# ShadowLearn – KI-gestützte Lernplattform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShadowLearn ist eine spezialisierte, webbasierte Lernanwendung (MVP), die entwickelt wurde, um die Effizienz bei anspruchsvollen IHK-Weiterbildungen (z. B. Operative Professionals) signifikant zu steigern.
 
-Currently, two official plugins are available:
+## 🚀 Der 14-Tage-Sprint
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Der Fokus liegt auf dem Kurs **„Mitarbeiterführung & Personalmanagement“**. Der gesamte Lernstoff ist in strukturierte Tageseinheiten portioniert, die aktives Lernen durch Flip-Cards, Quizze und eine visuelle Fortschrittsanzeige ermöglichen.
 
-## React Compiler
+**Kernfunktionen:**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * **Vollständiger Content:** Enthält alle 14 Tage des Kurses.
+  * **Interaktion:** Flip-Cards zur Wiederholung und Multiple-Choice-Quizze.
+  * **Tracking:** Speichert den Lernfortschritt im Local Storage.
+  * **Design:** Augenfreundliches „Schattenmacher“ Dark-Theme.
 
-## Expanding the ESLint configuration
+## ⚙️ Lokale Installation (Linux Mint / Ubuntu)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Das Projekt basiert auf **React** und **Vite**.
+
+### Voraussetzungen
+
+Stelle sicher, dass [Git](https://www.google.com/search?q=https://git-scm.com/downloads) und [Node.js](https://nodejs.org/) (Version 18+) auf deinem System installiert sind.
+
+### Setup und Start
+
+Wechsle in das Hauptverzeichnis des Projekts (`shadow-learn`) und führe die folgenden Befehle aus:
+
+1.  **Abhängigkeiten installieren:**
+    ```bash
+    npm install
+    ```
+2.  **App starten:**
+    ```bash
+    npm run dev
+    ```
+
+Die App startet dann unter `http://localhost:5173` in deinem Browser.
+
+-----
+
+**Hinweis:** Die detaillierten Schritte zur Installation auf Linux Mint findest du in `docs/INSTALLATION_LINUX.md`.
