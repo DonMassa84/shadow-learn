@@ -126,14 +126,11 @@ const PassiveSession = ({ cards, onClose }) => {
 
     const timer = setTimeout(() => {
       if (!isFlipped) {
-        // Wenn Frage angezeigt wird -> Karte umdrehen
         setIsFlipped(true);
       } else {
-        // Wenn Antwort angezeigt wird -> Nächste Karte & zurückdrehen
         setIsFlipped(false);
-        // Kurze Verzögerung damit der Flip zurück nicht sichtbar ist beim Textwechsel
         setTimeout(() => {
-          setIndex((prev) => (prev + 1) % cards.length); // Loop
+          setIndex((prev) => (prev + 1) % cards.length);
         }, 500); 
       }
     }, DURATION);
@@ -145,7 +142,6 @@ const PassiveSession = ({ cards, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black z-[60] flex flex-col items-center justify-center p-6 animate-fade-in">
-      {/* Controls Header */}
       <div className="absolute top-0 left-0 right-0 p-4 flex justify-between items-center">
         <div className="text-gray-400 text-sm">
           Passiv-Modus • Karte {index + 1}/{cards.length}
@@ -155,29 +151,20 @@ const PassiveSession = ({ cards, onClose }) => {
         </button>
       </div>
 
-      {/* Main Auto Card */}
       <div className="w-full max-w-md h-80 perspective-1000 relative">
         <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${isFlipped ? 'rotate-y-180' : ''}`}>
-          
-          {/* Front / Question */}
           <div className="absolute w-full h-full bg-gray-800 border border-gray-700 rounded-2xl p-8 flex flex-col items-center justify-center backface-hidden shadow-2xl">
              <Brain className="text-blue-500 mb-6 opacity-50" size={64} />
              <p className="text-2xl font-bold text-center text-white leading-relaxed">{currentCard.q}</p>
           </div>
-
-          {/* Back / Answer */}
           <div className="absolute w-full h-full bg-blue-900 border border-blue-700 rounded-2xl p-8 flex flex-col items-center justify-center backface-hidden rotate-y-180 shadow-2xl">
              <CheckCircle className="text-green-400 mb-6 opacity-50" size={64} />
              <p className="text-xl text-center text-white leading-relaxed">{currentCard.a}</p>
           </div>
-
         </div>
       </div>
 
-      {/* Progress Bar & Controls */}
       <div className="w-full max-w-md mt-12 flex flex-col items-center gap-6">
-        
-        {/* Play/Pause */}
         <button 
           onClick={() => setIsPaused(!isPaused)}
           className="p-4 bg-gray-800 rounded-full text-blue-400 hover:bg-gray-700 hover:scale-105 transition-all border border-gray-700 shadow-lg"
@@ -185,7 +172,6 @@ const PassiveSession = ({ cards, onClose }) => {
           {isPaused ? <PlayCircle size={32} /> : <PauseCircle size={32} />}
         </button>
 
-        {/* Timer Bar */}
         <div className="w-full h-1 bg-gray-800 rounded-full overflow-hidden relative">
           {!isPaused && (
              <div className="absolute top-0 left-0 h-full bg-blue-500 animate-progress" style={{ animationDuration: `${DURATION}ms` }} key={`${index}-${isFlipped}`}></div>
@@ -269,7 +255,7 @@ const QuizSession = ({ quizData, onComplete }) => {
 export default function ShadowLearnApp() {
   const [activeTab, setActiveTab] = useState('home');
   const [selectedDay, setSelectedDay] = useState(null);
-  const [viewMode, setViewMode] = useState('overview'); // 'overview', 'learn', 'quiz', 'passive'
+  const [viewMode, setViewMode] = useState('overview'); 
   
   const [progress, setProgress] = useState({ completedDays: [], quizScores: {} });
   const [darkMode, setDarkMode] = useState(true);
@@ -316,8 +302,6 @@ export default function ShadowLearnApp() {
   const getProgressPercentage = () => {
     return Math.round((progress.completedDays.length / courseData.totalDays) * 100);
   };
-
-  // --- RENDERERS ---
 
   const renderHome = () => (
     <div className="p-6 space-y-8 pb-24">
@@ -521,10 +505,8 @@ export default function ShadowLearnApp() {
       return <PassiveSession cards={selectedDay.cards} onClose={() => setViewMode('learn')} />;
     }
 
-    // Learn Mode (Theory + Cards)
     return (
       <div className="fixed inset-0 bg-gray-900 z-40 flex flex-col overflow-y-auto pb-20 animate-in slide-in-from-bottom-4 duration-300">
-        {/* Header */}
         <div className="p-4 flex items-center justify-between bg-gray-900/95 backdrop-blur sticky top-0 z-50 border-b border-gray-800">
           <button 
             onClick={() => { setSelectedDay(null); setViewMode('overview'); }}
@@ -536,7 +518,6 @@ export default function ShadowLearnApp() {
           <div className="w-6"></div>
         </div>
 
-        {/* Content */}
         <div className="p-6 max-w-2xl mx-auto w-full">
           <h1 className="text-2xl font-bold text-white mb-2">{selectedDay.title}</h1>
           <div className="bg-blue-900/20 text-blue-300 p-3 rounded-lg text-sm mb-6 border border-blue-900/50">
@@ -553,7 +534,6 @@ export default function ShadowLearnApp() {
           <div className="mb-8">
             <div className="flex justify-between items-end mb-3">
               <h3 className="text-gray-400 uppercase text-xs font-bold tracking-wider">2. Wiederholen (Flip-Cards)</h3>
-              {/* NEUER BUTTON FÜR PASSIVE MODE */}
               <button 
                 onClick={() => setViewMode('passive')}
                 className="flex items-center text-blue-400 text-xs hover:text-blue-300 bg-blue-900/30 px-2 py-1 rounded border border-blue-900/50"
