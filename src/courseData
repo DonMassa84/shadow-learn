@@ -1,0 +1,449 @@
+export const courseData = {
+  id: "mitarbeiterfuehrung_14tage",
+  title: "Mitarbeiterführung & Personalmanagement – 14-Tage-Sprint",
+  description:
+    "Intensivkurs zur Vorbereitung auf die IHK-Prüfung im Fach Mitarbeiterführung & Personalmanagement. Fokus: klare Tagesziele, kurze Theorie, praxisnahe Aufgaben, Reflexion.",
+  totalDays: 14,
+  tags: ["IHK", "Mitarbeiterführung", "Personalmanagement", "AEVO", "14-Tage-Sprint"],
+
+  days: [
+    // TAG 1
+    {
+      id: 1,
+      dayLabel: "Tag 1",
+      title: "Führungsverständnis & Führungsstile (Basis)",
+      goal:
+        "Du verstehst den Begriff Führung und kannst klassische Führungsstile (autoritä̈r, kooperativ, laissez-faire) unterscheiden.",
+      theory:
+        "Kernideen:\n" +
+        "• Führung = zielorientierte Beeinflussung von Verhalten.\n" +
+        "• Unterschied zwischen disziplinarischer und fachlicher Führung.\n" +
+        "• Klassische Führungsstile nach Lewin: autoritär, kooperativ, laissez-faire.\n" +
+        "• Zusammenhang zwischen Führungsstil, Motivation und Leistung.",
+      practice:
+        "Aufgabe 1: Notiere drei Situationen aus deinem Berufsalltag und ordne jeweils einen Führungsstil zu.\n" +
+        "Aufgabe 2: Analysiere kurz, wie sich der eingesetzte Führungsstil auf Motivation und Ergebnis ausgewirkt hat.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welcher Führungsstil dominiert in deinem bisherigen Berufsleben?\n" +
+        "2. Welcher Stil passt zu deiner Persönlichkeit – und warum?\n" +
+        "3. In welchen Situationen wäre ein anderer Stil sinnvoller gewesen?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 1 zum Thema „Führungsverständnis & Führungsstile (Basis)“. " +
+        "Erkläre: 1) Definition von Führung, 2) die drei klassischen Führungsstile nach Lewin mit je einem IT-Beispiel " +
+        "aus Helpdesk/Projektteam, 3) Vor- und Nachteile in Stichpunkten. Nutze klare Struktur, ruhigen, motivierenden Ton.",
+      audioScript:
+        "Willkommen zu Tag 1 deines 14-Tage-Sprints in Mitarbeiterführung und Personalmanagement. " +
+        "Heute klärst du, was Führung wirklich bedeutet und welche klassischen Führungsstile es gibt. " +
+        "Du lernst autoritäre, kooperative und laissez-faire Führung kennen und überlegst, welche Wirkung sie auf Motivation " +
+        "und Ergebnisse haben. Denke dabei konkret an Situationen aus deinem eigenen Berufsalltag."
+    },
+
+    // TAG 2
+    {
+      id: 2,
+      dayLabel: "Tag 2",
+      title: "Situative & transformationale Führung",
+      goal:
+        "Du kannst situative und transformationale Führung erklären und auf typische IT-Situationen anwenden.",
+      theory:
+        "Kernideen:\n" +
+        "• Situative Führung: Stil wird an Reifegrad und Kompetenz des Mitarbeiters angepasst.\n" +
+        "• Vier Grundrichtungen: anleiten, trainieren, unterstützen, delegieren.\n" +
+        "• Transformationale Führung: Sinn, Vision, Vorbildfunktion, individuelle Förderung.\n" +
+        "• Unterschied transaktional vs. transformational.",
+      practice:
+        "Aufgabe 1: Wähle einen Azubi oder Kollegen aus deiner Praxis und bewerte dessen Reifegrad (Fähigkeit/Wille).\n" +
+        "Aufgabe 2: Beschreibe, wie du diese Person situativ führen würdest – konkret in 4–6 Sätzen.\n" +
+        "Aufgabe 3: Formuliere eine kurze Vision, mit der du dein Team in einem IT-Projekt inspirierst.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. In welchen Situationen warst du bisher eher transaktional unterwegs (Belohnung/Gegenleistung)?\n" +
+        "2. Wo könntest du mehr transformationale Elemente einbauen (Vision, Vorbild, Coaching)?\n" +
+        "3. Was fällt dir aktuell leichter: klare Ansagen oder inspirierende Führung?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 2 zu „Situativer und transformationaler Führung“. " +
+        "Gliedere: 1) kurze Wiederholung der Führungsstile von Tag 1, 2) Erklärung der situativen Führung mit Reifegrad-Modell, " +
+        "3) Erklärung der transformationalen Führung mit einem IT-Team-Beispiel, 4) kurze Merkhilfe für die IHK-Prüfung.",
+      audioScript:
+        "Heute, an Tag 2, gehst du einen Schritt weiter: Du lernst, deinen Führungsstil an Situation und Person anzupassen. " +
+        "Die situative Führung zeigt dir, wie du je nach Reifegrad deines Mitarbeiters unterschiedlich führst. " +
+        "Außerdem lernst du die transformationale Führung kennen, bei der Sinn, Vorbildfunktion und individuelle Förderung " +
+        "im Mittelpunkt stehen. Überlege dir, in welchem deiner Projekte du mit einer klaren Vision mehr Wirkung erzielen könntest."
+    },
+
+    // TAG 3
+    {
+      id: 3,
+      dayLabel: "Tag 3",
+      title: "Motivationstheorien & Anreizsysteme",
+      goal:
+        "Du kennst die wichtigsten Motivationstheorien und kannst passende Maßnahmen zur Mitarbeitermotivation ableiten.",
+      theory:
+        "Kernideen:\n" +
+        "• Maslow: Bedürfnispyramide (physiologische Bedürfnisse bis Selbstverwirklichung).\n" +
+        "• Herzberg: Hygienefaktoren vs. Motivatoren.\n" +
+        "• Erwartungs-Valenz-Theorien (z. B. Vroom): Motivation = Erwartung × Wert.\n" +
+        "• Intrinsische vs. extrinsische Motivation in IT-Jobs.",
+      practice:
+        "Aufgabe 1: Ordne für deinen aktuellen Job je zwei Beispiele den Hygienefaktoren und den Motivatoren zu.\n" +
+        "Aufgabe 2: Überlege drei nicht-monetäre Maßnahmen, mit denen du dein Team motivieren könntest.\n" +
+        "Aufgabe 3: Formuliere einen kurzen Maßnahmenplan, wie du einen demotivierten Mitarbeiter wieder abholst.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Was motiviert dich persönlich am stärksten – Geld, Anerkennung, Entwicklung oder Sicherheit?\n" +
+        "2. Welche typischen Motivationsfehler hast du bei Führungskräften erlebt?\n" +
+        "3. Welche zwei konkreten Maßnahmen setzt du in den nächsten 7 Tagen bei dir oder anderen um?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 3 zu „Motivationstheorien & Anreizsystemen“. " +
+        "Erkläre in einfacher Sprache: 1) Maslows Bedürfnispyramide anhand eines IT-Mitarbeiters, " +
+        "2) Herzbergs Zwei-Faktoren-Theorie mit Beispielen aus dem Büroalltag, 3) je zwei wirksame Anreize, " +
+        "die du für ein IT-Team empfehlen würdest.",
+      audioScript:
+        "An Tag 3 drehst du den Fokus auf Motivation. Du lernst, warum Gehalt allein selten dauerhaft motiviert " +
+        "und wie Bedürfnisse und Arbeitsbedingungen zusammenhängen. Maslow und Herzberg helfen dir zu verstehen, " +
+        "welche Faktoren nur Unzufriedenheit verhindern und welche echte Begeisterung auslösen. " +
+        "Überlege dir, welche kleinen, aber wirksamen Anreize du in deinem Umfeld sofort einsetzen kannst."
+    },
+
+    // TAG 4
+    {
+      id: 4,
+      dayLabel: "Tag 4",
+      title: "Kommunikation, Feedback & Mitarbeitergespräche",
+      goal:
+        "Du kannst Feedback strukturiert geben, aktive Kommunikation einsetzen und Mitarbeitergespräche vorbereiten.",
+      theory:
+        "Kernideen:\n" +
+        "• Kommunikationsmodell (z. B. Schulz von Thun: Sache, Beziehung, Appell, Selbstoffenbarung).\n" +
+        "• Feedbackregeln: konkret, zeitnah, beschreibend statt bewertend.\n" +
+        "• Sandwich-Methode und Alternativen.\n" +
+        "• Aufbau eines strukturierten Mitarbeitergesprächs.",
+      practice:
+        "Aufgabe 1: Schreibe ein kurzes, konstruktives Feedback an einen fiktiven Mitarbeiter, der wiederholt zu spät liefert.\n" +
+        "Aufgabe 2: Strukturiere ein 20-minütiges Mitarbeitergespräch in Einleitung, Gesprächskern und Abschluss mit Zielvereinbarung.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Wann hast du zuletzt ehrliches Feedback bekommen – und wie wurde es formuliert?\n" +
+        "2. Welche deiner bisherigen Feedbacks waren zu allgemein oder zu hart?\n" +
+        "3. Welche konkrete Feedback-Regel setzt du ab heute bewusst ein?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 4 zu „Kommunikation, Feedback & Mitarbeitergespräche“. " +
+        "Zeige: 1) kurz das Vier-Ohren-Modell mit einem typischen Missverständnis im IT-Team, " +
+        "2) die wichtigsten Feedbackregeln mit einem Positiv- und Negativbeispiel, 3) einen groben Ablaufplan für ein Mitarbeitergespräch.",
+      audioScript:
+        "Heute trainierst du den Kern moderner Führung: Kommunikation. Du lernst, wie leicht Botschaften falsch ankommen können " +
+        "und warum klare, respektvolle Formulierungen entscheidend sind. Mit einfachen Feedbackregeln und einer Struktur für " +
+        "Mitarbeitergespräche kannst du ab jetzt deutlich professioneller auftreten. Denke dabei an reale Gespräche, " +
+        "die du in den nächsten Wochen führen wirst."
+    },
+
+    // TAG 5
+    {
+      id: 5,
+      dayLabel: "Tag 5",
+      title: "Konfliktarten & Konfliktlösung",
+      goal:
+        "Du erkennst typische Konfliktarten und kannst grundlegende Konfliktlösungsstrategien anwenden.",
+      theory:
+        "Kernideen:\n" +
+        "• Sach-, Beziehungs-, Rollen-, Verteilungs- und Wertekonflikte.\n" +
+        "• Eskalationsstufen von Konflikten (z. B. nach Glasl, vereinfacht).\n" +
+        "• Grundstrategien: ausweichen, durchsetzen, nachgeben, kompromiss, Kooperation.\n" +
+        "• Rolle der Führungskraft als Moderator.",
+      practice:
+        "Aufgabe 1: Beschreibe einen Konflikt aus deinem Berufsleben und ordne ihn einer Konfliktart zu.\n" +
+        "Aufgabe 2: Skizziere in 5–7 Sätzen, wie du diesen Konflikt heute als Führungskraft lösen würdest.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Neigst du eher zum Ausweichen, Durchsetzen oder Kompromiss?\n" +
+        "2. Welche Konflikte vermeidest du – obwohl sie geklärt werden müssten?\n" +
+        "3. Welche eine Technik möchtest du in der nächsten Konfliktsituation bewusst einsetzen?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 5 zu „Konfliktarten & Konfliktlösung“. " +
+        "Erkläre kurz die wichtigsten Konfliktarten, zeige ein konkretes Teambeispiel und führe eine einfache, " +
+        "prüfungsrelevante Konfliktlösungsstrategie Schritt für Schritt vor.",
+      audioScript:
+        "Tag 5 widmet sich Konflikten – einem Kernfeld jeder Führungskraft. Du lernst, Konflikte nicht mehr nur als Störung, " +
+        "sondern als Signal zu sehen. Wenn du Art und Eskalationsstufe erkennst, kannst du bewusst entscheiden, " +
+        "ob du moderierst, klare Entscheidungen triffst oder einen Kompromiss suchst. Nimm dir zum Abschluss einen realen Konflikt vor " +
+        "und überlege, wie du ihn heute souveräner lösen würdest."
+    },
+
+    // TAG 6
+    {
+      id: 6,
+      dayLabel: "Tag 6",
+      title: "Arbeitsrecht – Grundlagen",
+      goal:
+        "Du kennst die wichtigsten Grundlagen des Arbeitsrechts: Rechte und Pflichten, Arbeitsvertrag, BetrVG-Grundlagen.",
+      theory:
+        "Kernideen:\n" +
+        "• Hauptpflichten: Arbeitnehmer → Arbeitspflicht, Arbeitgeber → Vergütungspflicht.\n" +
+        "• Nebenpflichten: Treuepflicht, Fürsorgepflicht, Verschwiegenheit.\n" +
+        "• Wichtige Gesetze: BGB, KSchG, BetrVG, ArbZG, BUrlG (nur grober Überblick).\n" +
+        "• Rolle des Betriebsrats (Mitbestimmung in sozialen Angelegenheiten).",
+      practice:
+        "Aufgabe 1: Liste stichpunktartig auf, welche Pflichten du als Arbeitnehmer hast und welche Pflichten dein Arbeitgeber hat.\n" +
+        "Aufgabe 2: Notiere drei Fälle, in denen der Betriebsrat zwingend zu beteiligen ist (Stichwort: echte Mitbestimmung).",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche arbeitsrechtlichen Grundlagen waren dir bisher unklar?\n" +
+        "2. Wo siehst du in deinem Umfeld das größte Risiko für Konflikte mit dem Arbeitsrecht?\n" +
+        "3. Welche zwei Paragraphen oder Gesetze willst du dir für die Prüfung besonders merken?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 6 zu „Arbeitsrecht – Grundlagen“. " +
+        "Fasse die wichtigsten Pflichten von Arbeitnehmer und Arbeitgeber zusammen, nenne die zentralen Gesetze " +
+        "und erkläre kurz die Rolle des Betriebsrats – alles auf IHK-Prüfungsniveau, ohne juristische Überladung.",
+      audioScript:
+        "An Tag 6 betrittst du das Feld Arbeitsrecht. Du brauchst hier kein Volljurist zu werden, aber ein klares Fundament. " +
+        "Du lernst, welche Pflichten Arbeitnehmer und Arbeitgeber haben und welche Gesetze in der Praxis immer wieder auftreten. " +
+        "Besonders wichtig ist, dass du verstehst, wo der Betriebsrat Rechte hat und wie du rechtlich sauber agierst."
+    },
+
+    // TAG 7
+    {
+      id: 7,
+      dayLabel: "Tag 7",
+      title: "Arbeitsrecht – Abmahnung & Kündigung",
+      goal:
+        "Du kennst die Systematik von Abmahnung und verhaltensbedingter Kündigung und kannst typische Fälle einordnen.",
+      theory:
+        "Kernideen:\n" +
+        "• Funktionen der Abmahnung: Hinweis-, Rüge- und Warnfunktion.\n" +
+        "• Typische Gründe: beharrliche Unpünktlichkeit, Arbeitsverweigerung, Pflichtverletzungen.\n" +
+        "• Verhaltens-, personen- und betriebsbedingte Kündigung (Überblick).\n" +
+        "• Bedeutung der Verhältnismäßigkeit und vorheriger Abmahnung.",
+      practice:
+        "Aufgabe 1: Formuliere eine kurze, sachliche Abmahnung wegen wiederholter Unpünktlichkeit.\n" +
+        "Aufgabe 2: Ordne drei Beispiel-Fälle jeweils einer Kündigungsart zu (verhaltens-, personen-, betriebsbedingt).",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche Fehler würdest du bei einer Abmahnung unbedingt vermeiden?\n" +
+        "2. Warum ist es wichtig, Fehlverhalten konkret und nachweisbar zu dokumentieren?\n" +
+        "3. In welchen Fällen ist eine Kündigung trotz Fehlverhalten unverhältnismäßig?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 7 zu „Abmahnung & Kündigung“. " +
+        "Erkläre kurz Zweck und Aufbau einer Abmahnung, nenne typische Fehler und grenze verhaltens-, personen- " +
+        "und betriebsbedingte Kündigung anhand einfacher Praxisbeispiele ab.",
+      audioScript:
+        "Tag 7 vertieft das Arbeitsrecht mit einem heiklen Thema: Abmahnung und Kündigung. " +
+        "Du lernst, warum eine sauber formulierte Abmahnung oft Voraussetzung für eine verhaltensbedingte Kündigung ist " +
+        "und welche typischen Fehler Arbeitgeber machen. Mit diesem Wissen kannst du in der Prüfung sicher argumentieren " +
+        "und in der Praxis rechtssicherer handeln."
+    },
+
+    // TAG 8
+    {
+      id: 8,
+      dayLabel: "Tag 8",
+      title: "Personalplanung & Personalbeschaffung",
+      goal:
+        "Du verstehst die Schritte der Personalplanung und kennst gängige Methoden der Personalbeschaffung.",
+      theory:
+        "Kernideen:\n" +
+        "• Quantitative und qualitative Personalplanung (wie viele, welche Qualifikation?).\n" +
+        "• Instrumente: Stellenplan, Anforderungsprofile, Kapazitätsplanung.\n" +
+        "• Personalbeschaffung intern vs. extern, Vor- und Nachteile.\n" +
+        "• moderne Beschaffungswege: Anzeigen, Karriereseiten, Social Media, Netzwerke.",
+      practice:
+        "Aufgabe 1: Erstelle ein grobes Anforderungsprofil für einen IT-Systemadministrator.\n" +
+        "Aufgabe 2: Entscheide, ob du diese Stelle eher intern oder extern besetzen würdest und begründe deine Entscheidung.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche Risiken entstehen bei fehlender Personalplanung?\n" +
+        "2. Welche Beschaffungswege würdest du für Fachkräfte im IT-Bereich priorisieren?\n" +
+        "3. Was unterscheidet ein gutes Anforderungsprofil von einer reinen Wunschliste?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 8 zu „Personalplanung & Personalbeschaffung“. " +
+        "Zeige den Ablauf von der Bedarfsanalyse über das Anforderungsprofil bis hin zur Auswahl geeigneter Beschaffungswege " +
+        "mit einem praxisnahen IT-Beispiel.",
+      audioScript:
+        "An Tag 8 wechselst du in den Bereich Personalplanung. Du erkennst, dass gute Führung nicht nur Menschen entwickelt, " +
+        "sondern auch rechtzeitig für genügend und passend qualifizierte Mitarbeiter sorgt. " +
+        "Mit klaren Anforderungsprofilen und kluger Wahl der Beschaffungswege legst du das Fundament für stabile Teams."
+    },
+
+    // TAG 9
+    {
+      id: 9,
+      dayLabel: "Tag 9",
+      title: "Personalauswahl, Beurteilung & Einarbeitung",
+      goal:
+        "Du kannst Personalauswahl strukturieren, typische Beurteilungsfehler vermeiden und Einarbeitung planen.",
+      theory:
+        "Kernideen:\n" +
+        "• Auswahlverfahren: Interview, Tests, Arbeitsproben, Assessment.\n" +
+        "• Typische Beurteilungsfehler: Halo-Effekt, Sympathiefehler, Ähnlichkeitsfehler, Milde/Strenge.\n" +
+        "• Onboarding/Einarbeitung: Ziele, Inhalte, Patenmodell.\n" +
+        "• Bedeutung klarer Kriterien und Dokumentation.",
+      practice:
+        "Aufgabe 1: Entwickle einen einfachen Leitfaden mit 5–7 Kernfragen für ein strukturiertes Einstellungsinterview.\n" +
+        "Aufgabe 2: Beschreibe einen Einarbeitungsplan für die ersten vier Wochen eines neuen IT-Mitarbeiters.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche Beurteilungsfehler hast du selbst schon beobachtet oder gemacht?\n" +
+        "2. Warum ist ein strukturierter Interviewleitfaden so wichtig?\n" +
+        "3. Welche Einarbeitungshürde war für dich persönlich am größten – und wie hättest du sie besser gestalten können?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 9 zu „Personalauswahl, Beurteilung & Einarbeitung“. " +
+        "Fokussiere auf: 1) typische Beurteilungsfehler, 2) Aufbau eines strukturierten Interviews, 3) wichtigste Elemente eines guten Onboardings.",
+      audioScript:
+        "Tag 9 verknüpft Auswahl und Einarbeitung. Du erkennst, dass Fehlentscheidungen bei der Personalauswahl teuer sind " +
+        "und wie Beurteilungsfehler dich unbemerkt beeinflussen können. Gleichzeitig lernst du, warum ein guter Start " +
+        "in den ersten Wochen entscheidet, ob neue Mitarbeiter bleiben oder gehen."
+    },
+
+    // TAG 10
+    {
+      id: 10,
+      dayLabel: "Tag 10",
+      title: "Personalentwicklung & Mitarbeiterbindung",
+      goal:
+        "Du kennst zentrale Instrumente der Personalentwicklung und Ansätze zur Mitarbeiterbindung.",
+      theory:
+        "Kernideen:\n" +
+        "• PE-Instrumente: Schulungen, Coaching, Mentoring, Job Rotation, Projektarbeit.\n" +
+        "• Laufbahn- und Karriereplanung.\n" +
+        "• Mitarbeiterbindung: Arbeitsbedingungen, Entwicklungsperspektiven, Kultur, Führung.\n" +
+        "• Nutzen von regelmäßigen Entwicklungs- und Zielvereinbarungsgesprächen.",
+      practice:
+        "Aufgabe 1: Skizziere einen einfachen Entwicklungsplan für einen leistungsstarken Mitarbeiter.\n" +
+        "Aufgabe 2: Notiere drei konkrete Maßnahmen, mit denen du Fachkräfte langfristig binden würdest.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche Entwicklungschancen haben dich selbst bisher im Unternehmen gehalten – oder getrieben zu gehen?\n" +
+        "2. Welche zwei PE-Instrumente passen besonders gut in ein modernes IT-Umfeld?\n" +
+        "3. Wo ist in deinem Umfeld aktuell das größte Risiko für Fluktuation?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 10 zu „Personalentwicklung & Mitarbeiterbindung“. " +
+        "Zeige kurz die wichtigsten PE-Instrumente und erkläre, wie sie konkret zur Bindung von IT-Fachkräften beitragen.",
+      audioScript:
+        "Heute, an Tag 10, schaust du in die Zukunft deiner Mitarbeiter. Du lernst, wie Personalentwicklung gezielt eingesetzt wird, " +
+        "um Leistungsträger zu fördern und zu halten. Mit klaren Entwicklungsplänen und echter Perspektive " +
+        "wird Führung zu einem Angebot, das Menschen im Unternehmen hält."
+    },
+
+    // TAG 11
+    {
+      id: 11,
+      dayLabel: "Tag 11",
+      title: "Teamarbeit, Rollen & Gruppendynamik",
+      goal:
+        "Du verstehst Teamphasen, Rollen und kannst als Führungskraft in Gruppenprozesse steuernd eingreifen.",
+      theory:
+        "Kernideen:\n" +
+        "• Teamphasen (Forming, Storming, Norming, Performing – vereinfacht).\n" +
+        "• Unterschied Gruppe vs. Team.\n" +
+        "• Rollen in Teams (z. B. informelle Führer, Bremser, Experten).\n" +
+        "• Aufgaben der Führungskraft je nach Phase.",
+      practice:
+        "Aufgabe 1: Ordne dein aktuelles Team einer Teamphase zu und begründe deine Einschätzung.\n" +
+        "Aufgabe 2: Beschreibe, welche Maßnahmen du in dieser Phase als Führungskraft ergreifen solltest.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. In welcher Phase bleiben Teams bei euch häufig stecken?\n" +
+        "2. Welche Rolle nimmst du in Gruppen spontan ein?\n" +
+        "3. Was wäre dein nächster sinnvoller Schritt, um dein Team Richtung Performing zu bringen?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 11 zu „Teamarbeit, Rollen & Gruppendynamik“. " +
+        "Nutze ein IT-Projektteam als Beispiel, erkläre die Teamphasen und gib je Phase einen konkreten Führungsimpuls.",
+      audioScript:
+        "Tag 11 gehört deinem Team. Du lernst, dass Teams sich entwickeln und jede Phase eigene Herausforderungen hat. " +
+        "Wenn du erkennst, wo dein Team steht, kannst du gezielt führen, statt nur zu reagieren. " +
+        "Damit erhöhst du Leistung und Zufriedenheit gleichzeitig."
+    },
+
+    // TAG 12
+    {
+      id: 12,
+      dayLabel: "Tag 12",
+      title: "Führung in Veränderungsprozessen (Change Management)",
+      goal:
+        "Du kennst Grundlagen des Change Managements und den Umgang mit Widerstand in Veränderungsprozessen.",
+      theory:
+        "Kernideen:\n" +
+        "• Typische Phasen von Veränderungsprozessen (Schock, Ablehnung, Einsicht, Akzeptanz).\n" +
+        "• Gründe für Widerstand: Angst, Kontrollverlust, schlechte Kommunikation.\n" +
+        "• Erfolgsfaktoren: Transparenz, Beteiligung, schnelle Erfolge, Vorbildfunktion der Führung.\n" +
+        "• Rolle der Führungskraft als Übersetzer zwischen Management und Team.",
+      practice:
+        "Aufgabe 1: Beschreibe einen Veränderungsprozess aus deinem Umfeld und ordne ihn den Phasen zu.\n" +
+        "Aufgabe 2: Notiere drei Maßnahmen, mit denen du Widerstand im Team konstruktiv nutzen könntest.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche Veränderung hat dich persönlich am meisten gestresst – und warum?\n" +
+        "2. Welche Informationen hättest du dir damals von der Führung gewünscht?\n" +
+        "3. Was nimmst du dir als zukünftige Führungskraft für Change-Projekte konkret vor?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 12 zu „Führung in Veränderungsprozessen“. " +
+        "Erkläre kurz die typischen Reaktionen auf Change, zeige ein IT-nahes Beispiel und nenne drei konkrete Führungsmaßnahmen gegen Widerstand.",
+      audioScript:
+        "An Tag 12 bereitest du dich auf Veränderungen vor – die in der IT eher die Regel als die Ausnahme sind. " +
+        "Du lernst, wie Menschen typischerweise auf Change reagieren und wie du als Führungskraft Orientierung gibst. " +
+        "Statt Widerstand zu bekämpfen, kannst du ihn nutzen, um bessere Lösungen zu entwickeln."
+    },
+
+    // TAG 13
+    {
+      id: 13,
+      dayLabel: "Tag 13",
+      title: "Prüfungstraining – gemischte Aufgaben",
+      goal:
+        "Du übst prüfungsnahe Aufgabenformate aus allen Themenbereichen und erkennst deine Lücken.",
+      theory:
+        "Kernideen:\n" +
+        "• Überblick über die wichtigsten Themen der letzten 12 Tage.\n" +
+        "• Typische IHK-Aufgabenformate: MC, offene Fragen, Fallstudien.\n" +
+        "• Bewertungslogik: Punkte, Teilpunkte, Erwartungshorizont.\n" +
+        "• Strategien: Zeitmanagement, Priorisierung, Antworttechnik.",
+      practice:
+        "Aufgabe 1: Bearbeite 3–5 gemischte Übungsaufgaben (MC, FR, CASE) aus deinem Fragenpool.\n" +
+        "Aufgabe 2: Korrigiere deine Antworten an einem Musterlösungsschema und markiere deine häufigsten Fehler.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche Frageformen liegen dir besonders, welche weniger?\n" +
+        "2. Welche drei Themenfelder sind noch unsicher?\n" +
+        "3. Wie passt du deine Strategie für die Prüfung konkret an (z. B. Reihenfolge, Zeiteinteilung)?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 13 mit „Prüfungstraining – gemischte Aufgaben“. " +
+        "Erkläre kurz typische IHK-Aufgabenformate und gib je ein Beispiel mit kurzer Musterlösung. Fokus auf Denkstruktur, nicht auf Paragraphentiefe.",
+      audioScript:
+        "Tag 13 ist dein Generalprobe-Tag. Du arbeitest mit echten prüfungsnahen Aufgaben und spürst, wo du sicher bist " +
+        "und wo noch Unsicherheit herrscht. Nutze Fehler bewusst als Signal – sie zeigen dir genau, " +
+        "wo du am letzten Tag noch gezielt nachschärfen solltest."
+    },
+
+    // TAG 14
+    {
+      id: 14,
+      dayLabel: "Tag 14",
+      title: "Generalwiederholung & Prüfungssimulation",
+      goal:
+        "Du wiederholst die Kerninhalte strukturiert und simulierst eine Prüfungssituation.",
+      theory:
+        "Kernideen:\n" +
+        "• Strukturierte Wiederholung: Führungsstile, Motivation, Kommunikation, Konflikte, Arbeitsrecht, Personal.\n" +
+        "• Ankerbegriffe und Merksätze je Themenblock.\n" +
+        "• Mentale Vorbereitung: Umgang mit Stress, Prüfungsroutine, Plan B.\n" +
+        "• Checkliste: Was du vor der Prüfung noch einmal anschauen willst.",
+      practice:
+        "Aufgabe 1: Schreibe eine 45–60-minütige Mini-Klausur mit 3–4 Aufgaben aus unterschiedlichen Themenbereichen.\n" +
+        "Aufgabe 2: Korrigiere dich selbst kritisch und notiere maximal 5 zentrale Lernanker, die du dir bis zur echten Prüfung täglich anschaust.",
+      review:
+        "Reflexionsfragen:\n" +
+        "1. Welche drei Themen gibst du dir heute noch einmal bewusst als „Sicherheitsnetz“ mit?\n" +
+        "2. Wie gehst du am Prüfungstag konkret mit Nervosität um?\n" +
+        "3. Was ist dein persönlicher Satz, der dich im Prüfungsraum fokussiert?",
+      notebookPrompt:
+        "Erstelle ein 3–5-minütiges Lernvideo für Tag 14 zu „Generalwiederholung & Prüfungssimulation“. " +
+        "Fasse die wichtigsten Themenblöcke in Stichpunkten zusammen, gib eine einfache Wiederholungsstrategie " +
+        "für die letzten Tage vor der Prüfung und schließe mit einer kurzen mentalen Stärkungsbotschaft.",
+      audioScript:
+        "Der letzte Tag deines 14-Tage-Sprints gehört der Wiederholung und deinem Mindset. " +
+        "Du komprimierst das Wichtigste in wenige klare Anker und trainierst eine kleine Prüfungssimulation. " +
+        "Damit gehst du nicht perfekt, aber kontrolliert und vorbereitet in die echte IHK-Prüfung – " +
+        "mit einem klaren Plan, was du kannst und wie du unter Druck funktionierst."
+    }
+  ]
+} as const;
